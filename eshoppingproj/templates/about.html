@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+</head>
+<body>
+{% extends 'BASE.html' %}
+{% block body_block %}
+<div class="container">
+<div class="row">
+<div class="col-lg-8">
+<div class="jumbotron">
+  <h1 class="display-4">About Our Shoping Site</h1>
+  <p class="lead">Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser. Consumers find a product of interest by visiting the website of the retailer directly or by searching among alternative vendors using a shopping search engine, which displays the same product's availability and pricing at different e-retailers. As of 2020, customers can shop online using a range of different computers and devices, including desktop computers, laptops, tablet computers, smartphones, and smart speakers.
+  <hr class="my-4">
+  <p>One of the earliest forms of trade conducted online was IBM's online transaction processing (OLTP) developed in the 1960s and it allowed the processing of financial transactions in real-time.[2] The computerized ticket reservation system developed for American Airlines called Semi-Automatic Business Research Environment (SABRE) was one of its applications. Here, computer terminals located in different travel agencies were linked to a large IBM mainframe computer, which processed transactions simultaneously and coordinated them so that all travel agents had access to the same information at the same time.[2]
+
+The emergence of online shopping as we know today developed with the emergence of the Internet.[3] Initially, this platform only functioned as an advertising tool for companies, providing information about its products. It quickly moved on from this simple utility to actual online shopping transaction due to the development of interactive Web pages and secure transmissions.[4] Specifically, the growth of the internet as a secure shopping channel has developed since 1994, with the first sales of Sting album 'Ten Summoner's Tales'.[5] Wine, chocolates, and flowers soon followed and were among the pioneering retail categories which fueled the growth of online shopping. Researchers found that having products that are appropriate for e-commerce was a key indicator of Internet success.[6] Many of these products did well as they are generic products which shoppers did not need to touch and feel in order to buy. But also importantly, in the early days, there were few shoppers online and they were from a narrow segment: affluent, male, 30+. Online shopping has come along way since these early days and -in the UK- accounts for significant percents (depending on product category as percentages can vary).</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+ <div class="fb-like" data-href="http://127.0.0.1:8000/shop/about" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+</div>
+</div>
+
+    <div class="col-lg-4">
+        <img src="https://scontent.fagr1-1.fna.fbcdn.net/v/t1.0-9/s960x960/99138474_142396784033720_439684529465065472_o.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=xPnbjOUm0boAX9OapCj&_nc_ht=scontent.fagr1-1.fna&_nc_tp=7&oh=44b7f7b9bdde48c57b6bf8fe6c3061f5&oe=5EEC4605" width="500px" height="500px">
+        <h5><b>WebApplication Developer-:</b></h5>
+        <p>ABHISHEK RAWAT</p>
+
+    </div>
+</div>
+</div>
+{% block js %}
+<script>
+      
+    if (localStorage.getItem('cart')==null){
+        var cart={};
+    }
+    else {
+        cart=JSON.parse(localStorage.getItem('cart'));
+
+
+         document.getElementById('cart').innerHTML=Object.keys(cart).length;
+
+
+    }
+
+</script>
+{% endblock %}
+</body>
+ {% endblock %}
+</html>

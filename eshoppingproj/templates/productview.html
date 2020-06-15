@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<body>
+{% extends  'base.html' %}
+{% block title %}{{ prodd.product_name }}{% endblock %}
+{% block body_block %}
+    {% for i in prodd %}
+<div class="container mx-3">
+<div class="row">
+<div class="col-md-4">
+    <div class="row">
+<img src="/media/{{ i.image }}">
+    </div><br><br>
+    <div class="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <button id="pr{{ i.id }}" class="btn btn-primary cart" >Add To Cart</button>
+
+
+    </div>
+
+</div>
+<div class="col-md-8">
+    <h3  id="namepr{{ i.id }}"><b>{{ i.product_name }}</b></h3>
+    <p >Rs.<span id="priipr{{ i.id }}"><b>{{ i.prii }}</b></span></p>
+    <p>{{ i.desc }}</p><br><br><br><br><br><br><br><br>
+    <h2><i>Comment Like & Share</i></h2>
+    <div class="fb-like" data-href="http://127.0.0.1:8000/shop/product/{{ i.id }}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+    <div class="fb-comments" data-href="http://127.0.0.1:8000/shop/product/{{ i.id }}" data-numposts="5" data-width=""></div>
+
+
+
+
+</div>
+</div>
+</div>
+    {% endfor %}
+
+{% block  js %}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script>
+    console.log('working');
+    if (localStorage.getItem('cart')==null){
+        var cart={};
+    }
+    else {
+        cart=JSON.parse(localStorage.getItem('cart'));
+         document.getElementById('cart').innerHTML=Object.keys(cart).length;
+
+    }
+
+    $('.cart').click(function () {
+        //$('.divpr').on('click','button.cart',function(){
+        console.log('clicked');
+        var idstr=this.id.toString();
+        console.log(idstr);
+        if (cart[idstr] !=undefined){
+            qty = cart[idstr][0] + 1;
+             nam = document.getElementById('name' + idstr).innerHTML;
+              price = document.getElementById('prii' +idstr).innerText;
+            cart[idstr] = [qty,nam,parseInt(price)];
+        }
+        else {
+            qty = 1;
+            nam = document.getElementById('name' + idstr).innerHTML;
+            price = document.getElementById('prii' +idstr).innerText;
+            cart[idstr] = [qty,nam,parseInt(price)];
+        }
+        console.log(cart);
+        localStorage.setItem('cart',JSON.stringify(cart));
+          document.getElementById('cart').innerHTML=Object.keys(cart).length;
+    });
+
+
+
+
+
+
+
+</script>
+
+{% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+{% endblock %}
+</html>

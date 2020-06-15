@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{% static 'css/mystatic.css' %}">
+
+
+</head>
+<body style="background-color: yellow">
+<div class="container">
+    <div class="raw">
+
+
+        <div class="offset-md-9 col-md-8">
+
+            <form method="post" >
+                <h5 style="text-align: center; "><b>Please Login Here...</b></h5><br>
+                {% csrf_token %}
+                {{ lform }}
+                <center><br>
+                    <input type="submit" value="Login" class="btn btn-success">
+                      <input type="reset" value="clear" class="btn btn-danger"><br>
+                    <a href="http://127.0.0.1:8000/shop/reg">Create New Account Here...</a>
+                </center>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

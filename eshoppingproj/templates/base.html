@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Shopping Cart</title>
+          <meta charset="UTF-8">
+    <title>Shoping Cart</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+
+
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+                    .col-lg-3{
+
+    margin-left: 0px;
+
+}
+                    .card-title{
+                        color: white;
+                    }
+                    body{
+                        color: black;
+                    }
+.card{
+    background-color: blue;
+}
+.col-md-3 img{
+    width: 100%;
+    height: auto;
+}
+.mg{
+    color: pink;
+}
+
+
+
+body .no-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+
+
+}
+
+
+
+        img{
+            border-radius:50px;
+        }
+
+    </style>
+
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+  </head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="https://scontent.fagr1-1.fna.fbcdn.net/v/t1.0-9/s960x960/99138474_142396784033720_439684529465065472_o.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=xPnbjOUm0boAX9OapCj&_nc_ht=scontent.fagr1-1.fna&_nc_tp=7&oh=44b7f7b9bdde48c57b6bf8fe6c3061f5&oe=5EEC4605" height="50px" width="50px" alt="Avatar" >
+  <a class="navbar-brand" href="/shop/index">My Shopping cart</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/shop/index" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/about">About us</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="/shop/contact">Contact Us</a>
+      </li>
+
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Social Sites
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://www.facebook.com/">Facebook</a>
+          <a class="dropdown-item" href="https://www.youtube.com/">Youtube</a>
+          <a class="dropdown-item" href="https://www.instagram.com/accounts/login/">Instagram</a>
+        </div>
+
+      </li>
+    </ul>
+            <form method="get" action="/shop/search" class="form-inline my-2 my-lg-0">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <button type="button" class="btn btn-secondary mx-2" id="pop" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="cart item">
+          cart(<span id="cart">0</span>)
+      </button>
+    <a  type="button" href="/shop/reg">Sign up</a>&nbsp&nbsp
+  <a type="button" href="/shop/log">Log in</a>&nbsp&nbsp
+                <a type="button" href="/shop/logout">Log Out</a>
+
+            </form>
+
+  </div>
+</nav>
+
+
+<!-- Button trigger modal -->
+
+
+
+
+{% block body_block %}
+{% endblock %}
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

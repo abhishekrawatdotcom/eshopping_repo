@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6cb0d191-9dca-4edd-9159-557c35d367f4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bnk1wghzGWedJMKbFIIN4g5q2F" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Django Server.eshoppingproj">
+    <configuration name="cheksum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eshoppingproj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shop/paytm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shop/paytm/cheksum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="eshoppingproj" type="Python.DjangoServer" factoryName="Django server">
+      <module name="eshoppingproj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="eshoppingproj.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\91827\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.cheksum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cb0d191-9dca-4edd-9159-557c35d367f4" name="Default Changelist" comment="" />
+      <created>1589275033407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589275033407</updated>
+      <workItem from="1589275049099" duration="36000" />
+      <workItem from="1589275123416" duration="37000" />
+      <workItem from="1589275214360" duration="20000" />
+      <workItem from="1589275266737" duration="17000" />
+      <workItem from="1589275307302" duration="17000" />
+      <workItem from="1589275365476" duration="26000" />
+      <workItem from="1589275438862" duration="14000" />
+      <workItem from="1589275483027" duration="14000" />
+      <workItem from="1589275526652" duration="10000" />
+      <workItem from="1589275561471" duration="32000" />
+      <workItem from="1589275618559" duration="11000" />
+      <workItem from="1589275646502" duration="14000" />
+      <workItem from="1589275678984" duration="23000" />
+      <workItem from="1589275805585" duration="526000" />
+      <workItem from="1589276792739" duration="394000" />
+      <workItem from="1589277442748" duration="125000" />
+      <workItem from="1589519151645" duration="306000" />
+      <workItem from="1589520455603" duration="71000" />
+      <workItem from="1589520674122" duration="84000" />
+      <workItem from="1589520872790" duration="18000" />
+      <workItem from="1589520898735" duration="32000" />
+      <workItem from="1589521141402" duration="55000" />
+      <workItem from="1589521386339" duration="645000" />
+      <workItem from="1589522378828" duration="491000" />
+      <workItem from="1589522937070" duration="10000" />
+      <workItem from="1589522984380" duration="674000" />
+      <workItem from="1589526756376" duration="589000" />
+      <workItem from="1589527415476" duration="139000" />
+      <workItem from="1589527599557" duration="1163000" />
+      <workItem from="1589528827573" duration="37000" />
+      <workItem from="1589528983219" duration="124000" />
+      <workItem from="1589538429330" duration="3502000" />
+      <workItem from="1589548392073" duration="4347000" />
+      <workItem from="1589561904847" duration="343000" />
+      <workItem from="1589562369541" duration="3461000" />
+      <workItem from="1589567876008" duration="162000" />
+      <workItem from="1589600850611" duration="2109000" />
+      <workItem from="1589603784023" duration="3410000" />
+      <workItem from="1589608869680" duration="1102000" />
+      <workItem from="1589612134835" duration="805000" />
+      <workItem from="1589647181009" duration="796000" />
+      <workItem from="1589689765080" duration="1544000" />
+      <workItem from="1589691422919" duration="2434000" />
+      <workItem from="1589694468962" duration="3321000" />
+      <workItem from="1589710971087" duration="1415000" />
+      <workItem from="1589712548884" duration="1448000" />
+      <workItem from="1589725122089" duration="3541000" />
+      <workItem from="1589738746972" duration="161000" />
+      <workItem from="1589738950673" duration="422000" />
+      <workItem from="1589739468405" duration="73000" />
+      <workItem from="1589773868065" duration="4394000" />
+      <workItem from="1589779052964" duration="4355000" />
+      <workItem from="1589784697573" duration="3252000" />
+      <workItem from="1589795006272" duration="3975000" />
+      <workItem from="1589811948577" duration="4126000" />
+      <workItem from="1589827136367" duration="457000" />
+      <workItem from="1589862617390" duration="4588000" />
+      <workItem from="1589867680390" duration="3325000" />
+      <workItem from="1589975926706" duration="378000" />
+      <workItem from="1589976413275" duration="3461000" />
+      <workItem from="1589984276257" duration="57000" />
+      <workItem from="1589996353853" duration="533000" />
+      <workItem from="1589996974499" duration="18000" />
+      <workItem from="1590034078144" duration="4031000" />
+      <workItem from="1590039504976" duration="1933000" />
+      <workItem from="1590043819312" duration="559000" />
+      <workItem from="1590046935416" duration="2591000" />
+      <workItem from="1590072586218" duration="1854000" />
+      <workItem from="1590084366973" duration="1235000" />
+      <workItem from="1590120832012" duration="4481000" />
+      <workItem from="1590125790471" duration="4055000" />
+      <workItem from="1590143696366" duration="2271000" />
+      <workItem from="1590156618978" duration="1351000" />
+      <workItem from="1590169995862" duration="1294000" />
+      <workItem from="1590209886881" duration="3637000" />
+      <workItem from="1590230408868" duration="1093000" />
+      <workItem from="1590240330679" duration="2783000" />
+      <workItem from="1590257805634" duration="4328000" />
+      <workItem from="1590297824337" duration="1164000" />
+      <workItem from="1590310356922" duration="3293000" />
+      <workItem from="1590317582199" duration="1476000" />
+      <workItem from="1590330827840" duration="2961000" />
+      <workItem from="1590377965807" duration="354000" />
+      <workItem from="1590379386528" duration="3580000" />
+      <workItem from="1590385595410" duration="4304000" />
+      <workItem from="1590404485469" duration="4179000" />
+      <workItem from="1590427416351" duration="2916000" />
+      <workItem from="1590463684709" duration="844000" />
+      <workItem from="1590467111277" duration="3541000" />
+      <workItem from="1590471769965" duration="1515000" />
+      <workItem from="1590484134182" duration="3935000" />
+      <workItem from="1590512058554" duration="1823000" />
+      <workItem from="1590547272255" duration="1971000" />
+      <workItem from="1590555554071" duration="3155000" />
+      <workItem from="1590575996176" duration="1403000" />
+      <workItem from="1590589592404" duration="2175000" />
+      <workItem from="1590642388618" duration="4901000" />
+      <workItem from="1590647866092" duration="610000" />
+      <workItem from="1590659851223" duration="22000" />
+      <workItem from="1590660012537" duration="23000" />
+      <workItem from="1590661303607" duration="93000" />
+      <workItem from="1590661458762" duration="18000" />
+      <workItem from="1590661592006" duration="162000" />
+      <workItem from="1590661764888" duration="130000" />
+      <workItem from="1591029958998" duration="886000" />
+      <workItem from="1591073329406" duration="398000" />
+      <workItem from="1591074178393" duration="36000" />
+      <workItem from="1591074244417" duration="1190000" />
+      <workItem from="1591076798215" duration="4012000" />
+      <workItem from="1591081549517" duration="4483000" />
+      <workItem from="1591117496646" duration="394000" />
+      <workItem from="1591253063708" duration="4539000" />
+      <workItem from="1591270250305" duration="618000" />
+      <workItem from="1591333287355" duration="3265000" />
+      <workItem from="1591338831926" duration="1980000" />
+      <workItem from="1591343871190" duration="646000" />
+      <workItem from="1591419576726" duration="315000" />
+      <workItem from="1591509332376" duration="3494000" />
+      <workItem from="1591526306849" duration="1290000" />
+      <workItem from="1591593515292" duration="3668000" />
+      <workItem from="1591598547931" duration="817000" />
+      <workItem from="1591599819543" duration="1119000" />
+      <workItem from="1591681449755" duration="236000" />
+      <workItem from="1591681901461" duration="10000" />
+      <workItem from="1591682090603" duration="34000" />
+      <workItem from="1591683025107" duration="1584000" />
+      <workItem from="1591765401323" duration="2934000" />
+      <workItem from="1591771303808" duration="3223000" />
+      <workItem from="1591787100327" duration="2499000" />
+      <workItem from="1591851203565" duration="3422000" />
+      <workItem from="1591856114761" duration="1283000" />
+      <workItem from="1591939649427" duration="1176000" />
+      <workItem from="1591944660385" duration="841000" />
+      <workItem from="1592108325205" duration="774000" />
+      <workItem from="1592109834741" duration="6000" />
+      <workItem from="1592109871281" duration="107000" />
+      <workItem from="1592110590838" duration="1161000" />
+      <workItem from="1592112497792" duration="1459000" />
+      <workItem from="1592115362058" duration="1500000" />
+      <workItem from="1592193051987" duration="1719000" />
+      <workItem from="1592194957788" duration="1671000" />
+      <workItem from="1592196885244" duration="819000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="67" key="#eshoppingproj" timestamp="1591419873053">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state x="392" y="67" key="#eshoppingproj/0.67.1366.661@0.67.1366.661" timestamp="1591419873053" />
+    <state width="1323" height="158" key="GridCell.Tab.0.bottom" timestamp="1592197739835">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="158" key="GridCell.Tab.0.bottom/0.67.1366.661@0.67.1366.661" timestamp="1592197739835" />
+    <state width="1306" height="147" key="GridCell.Tab.0.bottom/0.96.1366.632@0.96.1366.632" timestamp="1590647397720" />
+    <state width="1323" height="158" key="GridCell.Tab.0.center" timestamp="1592197739835">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="158" key="GridCell.Tab.0.center/0.67.1366.661@0.67.1366.661" timestamp="1592197739835" />
+    <state width="1306" height="147" key="GridCell.Tab.0.center/0.96.1366.632@0.96.1366.632" timestamp="1590647397720" />
+    <state width="1323" height="158" key="GridCell.Tab.0.left" timestamp="1592197739835">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="158" key="GridCell.Tab.0.left/0.67.1366.661@0.67.1366.661" timestamp="1592197739835" />
+    <state width="1306" height="147" key="GridCell.Tab.0.left/0.96.1366.632@0.96.1366.632" timestamp="1590647397720" />
+    <state width="1323" height="158" key="GridCell.Tab.0.right" timestamp="1592197739835">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="158" key="GridCell.Tab.0.right/0.67.1366.661@0.67.1366.661" timestamp="1592197739835" />
+    <state width="1306" height="147" key="GridCell.Tab.0.right/0.96.1366.632@0.96.1366.632" timestamp="1590647397720" />
+    <state width="1323" height="196" key="GridCell.Tab.1.bottom" timestamp="1589996924001">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.bottom/0.67.1366.661@0.67.1366.661" timestamp="1589996924001" />
+    <state width="1323" height="196" key="GridCell.Tab.1.center" timestamp="1589996924001">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.center/0.67.1366.661@0.67.1366.661" timestamp="1589996924001" />
+    <state width="1323" height="196" key="GridCell.Tab.1.left" timestamp="1589996924001">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.left/0.67.1366.661@0.67.1366.661" timestamp="1589996924001" />
+    <state width="1323" height="196" key="GridCell.Tab.1.right" timestamp="1589996924001">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.right/0.67.1366.661@0.67.1366.661" timestamp="1589996924001" />
+    <state x="184" y="67" key="SettingsEditor" timestamp="1590343770368">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state x="184" y="67" key="SettingsEditor/0.67.1366.661@0.67.1366.661" timestamp="1590343770368" />
+    <state x="346" y="66" width="672" height="678" key="search.everywhere.popup" timestamp="1590344160453">
+      <screen x="0" y="67" width="1366" height="661" />
+    </state>
+    <state x="346" y="66" width="672" height="678" key="search.everywhere.popup/0.67.1366.661@0.67.1366.661" timestamp="1590344160453" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/eshoppingproj$cheksum.coverage" NAME="cheksum Coverage Results" MODIFIED="1590262176839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shop/paytm" />
+  </component>
+</project>

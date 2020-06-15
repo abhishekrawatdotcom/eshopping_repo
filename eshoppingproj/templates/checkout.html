@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+  <body>
+
+
+{% extends  'base.html' %}
+
+{% block body_block %}
+    <div class="container">
+    <div class="col my-4" >
+    <h2>step 1 - My Shopping Cart Checkout - Review Your Cart Item</h2>
+    <div  >
+        <ul class="list-group" id="items">
+
+</ul>
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Your Cart Total   <b>Rs:<span id="totalprice"></span></b>  Enter Your Details Below thank you for using this</li>
+  </ol>
+</nav>
+
+
+    </div>
+    </div>
+    <div class="col my-5">
+        <h2>step 2 -Enter Address & Other Details</h2>
+        <form method="post" action="/shop/checkout">{% csrf_token %}
+            <input type="hidden" name="itemsjson" id="itemsjson">
+            <input type="hidden" name="amount" id="amount">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Phone Number</label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="city" name="city" placeholder="City">
+    </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">State</label>
+      <input type="text" class="form-control" id="state" name="state" placeholder="State">
+    </div>
+
+       <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="number" class="form-control" id="zi" name="zip">
+    </div>
+
+
+  </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary ">Place Order</button>
+</form>
+
+
+    </div>
+    </div>
+
+    {% block js %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script>
+    if (localStorage.getItem('cart')==null){
+        var cart={};
+    }
+    else {
+        cart=JSON.parse(localStorage.getItem('cart'));
+
+         document.getElementById('cart').innerHTML=Object.keys(cart).length;
+    }
+
+
+
+    var sum = 0;
+    var totalprice = 0;
+
+    if ($.isEmptyObject(cart)){
+        mystrr='<p>Your Cart Is Empty Please Add Some Items Before checking Out</p>'
+        $('#items').append(mystrr);
+    }
+    else {
+
+
+        for (item in cart) {
+
+            let name = cart[item][1];
+            let qty = cart[item][0];
+            let itemprice = cart[item][2];
+            sum = sum + qty;
+            totalprice=totalprice + qty* itemprice
+
+
+            mystrr = ' <li class="list-group-item d-flex justify-content-between align-items-center">' + name + '<span class="badge badge-primary badge-pill">' + qty + '</span>' + '</li>'
+
+
+            $('#items').append(mystrr);
+
+
+        }
+    }
+    document.getElementById('cart').innerHTML = sum;
+    document.getElementById('totalprice').innerHTML = totalprice;
+    $('#itemsjson').val(JSON.stringify(cart));
+    {% if thank %}
+    alert('Thanks for ordering with us. your order id is {{ id }}. use it to traker your order using our oder traker ');
+    localStorage.clear();
+    {% endif %}
+    $('#amount').val($('#totalprice').html())
+     localStorage.clear();
+
+    </script>
+{% endblock %}
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+{% endblock %}
+</html>
+
+
+
+
+
+
+
+
+
+
+
